@@ -1,4 +1,4 @@
-FROM centos7-ssh
+FROM --platform=amd64 centos7-ssh
 ADD jre-8u331-linux-x64.tar.gz /usr/local
 RUN mv usr/local/jre1.8.0_331 /usr/local/jdk1.8
 ENV JAVA_HOME /usr/local/jdk1.8

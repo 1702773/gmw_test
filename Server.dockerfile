@@ -1,4 +1,4 @@
-FROM centos:7
+FROM --platform=amd64 centos:7 
 MAINTAINER mwf
 
 RUN yum install -y openssh-server
